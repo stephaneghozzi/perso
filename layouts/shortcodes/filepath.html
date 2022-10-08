@@ -1,0 +1,3 @@
+{{/* Produces relative path to file designated by the second argument (`1`) in the folder defined in config.toml [params.paths] by first argumet (`0`) */}}
+{{ $pathname := .Get 0 }}
+{{ index .Site.Params.paths $pathname | relURL }}/{{ .Get 1 }}

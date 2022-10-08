@@ -1,0 +1,270 @@
+// ~~~~ Bootstrap styles ~~~~ //
+
+// colors
+$primary: #448dfb;
+$dark: #121e3d;
+$white: white;
+$body-bg-color: $white;
+$body-color: $dark;
+
+@import "bootstrap/bootstrap";
+
+// responsive border-end
+$utilities: map-merge(
+    $utilities, 
+    ("border-end": 
+        map-merge(
+            map-get($utilities, "border-end"),
+            (responsive: true),
+        ),
+    )
+);
+@import "bootstrap/utilities/api";
+
+// dirty fix because responsive border-end doesn't want to take custom color, surely because of order in which they are loaded
+.border-dark {
+    --bs-border-opacity: 1;
+    border-color: rgba(var(--bs-dark-rgb), var(--bs-border-opacity)) !important;
+}
+
+// ~~~~ custom styles ~~~~ //
+
+@font-face {
+    font-family: "text-block";
+    src: url("../fonts/Chivo-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "text-block";
+    src: url("../fonts/Chivo-Regular.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "text-block";
+    src: url("../fonts/Chivo-LightItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "text-block";
+    src: url("../fonts/Chivo-Italic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "titles";
+    src: url("../fonts/Chivo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "titles";
+    src: url("../fonts/Chivo-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "titles";
+    src: url("../fonts/Chivo-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "titles";
+    src: url("../fonts/Chivo-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 360px;
+    min-height: 100vh;
+    font-family: "text-block";
+    color: $body-color;
+    background-color: $body-bg-color;
+    text-decoration-thickness: 0.4rem;
+}
+
+body a {
+    text-decoration: underline;
+    text-decoration: underline;
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.05em;
+    color: inherit;
+    font-size: inherit;
+}
+
+.sg-navbar {
+    font-family: "titles";
+    color: $body-color;
+    background-color: $body-bg-color;
+}
+
+.sg-navbar a {
+    text-decoration: none;
+}
+
+.nav-item {
+    // somehow Bootstrap's `nav-link` causes background flickering, hence not 
+    // using it and setting padding here
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;    
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.sg-nobr {
+    white-space: nowrap;
+}
+
+h2 {
+    font-family: "titles";
+    font-size: 4rem;
+}
+
+.sg-single-page {
+    padding-top: 5em;
+    padding-bottom: 6em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.shifted-anchor {
+    padding-top: 10rem;
+    margin-top: -10rem;
+}
+
+.sg-icon {
+    height: 1em;
+    width: 1em;
+    vertical-align: -.15em;
+    fill: currentColor;
+}
+
+.sg-presentation-leading-space {
+    padding: 1.2em;
+}
+
+.sg-presentation-trailing-space {
+    padding: 1.8em;
+}
+
+.sg-presentation-intro {
+    font-size: 2rem;
+    padding: 1em;
+    padding-bottom: 0.5em;
+}
+
+.sg-presentation-action {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+.sg-presentation-action a {
+    white-space: nowrap;
+    text-decoration: none;
+    border-style: solid;
+    padding: 0.5em;
+    margin: 0.5em;
+    line-height: 3em;
+    border-width: 0.1em 0.1em 0.1em 0.1em;
+}
+
+.sg-presentation-philosophy {
+    padding: 2em;
+    padding-bottom: 0.3em;
+}
+
+.sg-projects-title {
+    padding: 0.75em;
+}
+
+.sg-projects-content {
+    padding-left: 2.5em;
+    padding-top: 1.5em;
+    padding-bottom: 2.5em;
+}
+
+.sg-projects-items-title {
+    font-weight: bold;
+    padding: 0.75em;
+}
+
+.sg-projects-items-content {
+    padding: 1.25em;
+}
+
+.sg-projects-items-links {
+    padding: 1.25em;
+}
+
+.sg-about-title {
+    text-align: end;
+    padding: 0.75em;
+}
+
+.sg-about-contact {
+    color: $body-bg-color;
+    background-color: $body-color;
+    text-align: end;
+    padding: 2em;
+    padding-right: 2.5em;
+}
+
+.sg-about-contact a {
+    text-decoration: none;
+}
+
+.sg-about-contact p {
+    margin: 0;
+}
+
+.sg-about-bio {
+    padding: 2.5em;
+}
+
+.sg-about-website p {
+    text-align: center;
+    padding: 1.25em;
+    margin: 0;
+}
+
+.sg-about-love p {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 4em;
+    margin: 0;
+}
+
+.sg-about-love a {
+    text-decoration: none;
+}
+
+.sg-footer p {
+    padding: 1.25em;
+    margin: 0;
+}

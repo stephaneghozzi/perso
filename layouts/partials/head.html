@@ -1,0 +1,29 @@
+{{ define "head" }}
+
+<head>
+    {{ template "_internal/twitter_cards.html" . }}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="icon" type="image/x-icon" href="{{ .Site.Params.favicon | relURL }}">
+    
+    {{ range .Site.Params.scss }}
+        {{ $scss := resources.Get .source }}
+        {{ $optionsCSS := (dict "targetPath" .target) }}
+        {{ $styles := $scss | resources.ToCSS | toCSS $optionsCSS }}
+        <link href="{{ $styles.RelPermalink }}" rel="stylesheet">
+    {{ end }}
+
+    <title>
+        {{ .Site.Title }}{{ if ne .Title .Site.Title }} | {{ .Title }}{{ end }}
+    </title>
+
+    {{ block "icons" . }}
+    {{ end }}
+
+  </head>
+
+{{ end }}

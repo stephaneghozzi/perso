@@ -1,0 +1,28 @@
+{{ define "navbar" }}
+
+<nav class="navbar sg-navbar sticky-top bg-white border-bottom border-4 border-dark">
+            
+        <a class="navbar-brand" href="{{ .Site.BaseURL | relURL }}">{{ .Site.Title }}</a>
+
+        <div class="d-flex ms-auto">
+
+            <div class="container">
+                
+                <ul class="nav justify-content-end">
+                    {{ range .Site.Menus.main }}
+                        <li class="nav-item">
+                            <a href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                    {{ end }}
+                </ul>
+
+                {{ block "nav-icons-list" . }}
+                {{ end }}
+
+            </div>
+
+        </div>
+
+</nav>
+
+{{ end }}

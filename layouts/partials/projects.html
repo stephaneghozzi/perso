@@ -1,0 +1,65 @@
+{{ define "projects" }}
+    
+    <div class="container-fluid border-bottom border-4 border-dark">
+        <div class="row">
+
+            <!-- Projects title and content -->
+            <div class="col-md-5 col-lg-4 border-top border-end-md border-2 border-dark p-0">
+
+                    {{ with .Site.GetPage "home/projects/projects-title-content.md" }}
+                        <div class="sg-projects-title">
+                            <h2 id="projects" class="shifted-anchor">
+                                {{ .Title }}
+                            </h2>
+                        </div>
+                        <div class="container sg-projects-content">
+                            {{ .Content }}
+                        </div>
+                    {{ end }}
+
+            </div>
+
+            <!-- List of projects -->
+            <div class="col-md-7 col-lg-8">
+                    <div class="container-fluid">
+
+                        {{ range .Site.Params.projects.name }}
+                            {{ $projdir := $.Site.Params.paths.projects | relURL }}
+                            {{ $projcontent := print $projdir "/" . ".md"}}
+                             
+                            <div class="row">
+                                <div class="col p-0">
+
+                                    <div class="div">
+                                        {{ with $.GetPage $projcontent }}
+
+                                            <div class="row sg-projects-items-title border-top border-dark border-2">
+                                                {{ .Title }}
+                                            </div>
+
+                                            <div class="row border-top border-dark border-1">
+                                                <div class="col-8 col-lg-9 sg-projects-items-content">
+                                                    {{ .Content }}
+                                                </div>
+                                                <div class="col-4 col-lg-3 sg-projects-items-links border-start border-1 border-dark">
+                                                    {{ range .Params.refs }}
+                                                        <a href="{{ .url }}">{{ .name | markdownify }}</a><br>
+                                                    {{ end }}
+                                                </div>
+                                            </div>
+
+                                        {{ end }}
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        {{ end }}
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+{{ end }}

@@ -1,0 +1,13 @@
+{{ define "nav-icons-list" }}
+
+    <ul class="nav justify-content-end">
+        {{ range .Site.Params.social }}
+            <li class="nav-item">
+                <a href="{{ .url }}">
+                    <svg class="sg-icon"><use xlink:href="#{{ .icon }}"/></svg>
+                </a>
+            </li>
+        {{ end }}
+    </ul>
+
+{{ end }}

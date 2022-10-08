@@ -1,0 +1,61 @@
+baseURL = "https://stephaneghozzi.com"
+languageCode = "en-us"
+title = "Stéphane Ghozzi"  
+enableRobotsTXT = true
+
+[[menu.main]]
+    name = "home"
+    url = "/#home"
+    weight = 1
+[[menu.main]]
+    name = "projects"
+    url = "/#projects"
+    weight = 2
+[[menu.main]]
+    name = "about"
+    url = "/#about"
+    weight = 3
+
+[params]
+    author = "Stéphane Ghozzi"
+    favicon = "img/favicon.png"
+    description = "Stéphane Ghozzi's personal site"
+    images = ["img/thumbnail.png"]
+
+    [params.paths]
+        docs = "docs" # without trailing "/"
+        projects = "/home/projects/items" # individual projects without trailing "/"
+
+    [params.projects]
+        name = ["epi-quark", "eios-anomaly", "sormasdatagen", "wotva", "asmodee-trendbreaker-evaluation", "signale-logo"]
+
+[[params.scss]]
+    source = "scss/styles.scss"
+    target = "css/styles.css"
+
+[[params.social]]
+    name = "email"
+    icon = "envelope"
+    email = "hello@stephaneghozzi.com"
+    url = "mailto:hello@stephaneghozzi.com"
+    weight = 1
+[[params.social]]
+    name = "GitLab"
+    icon = "gitlab"
+    url = "https://gitlab.com/stephaneghozzi"
+    weight = 2
+[[params.social]]
+    name = "GitHub"
+    icon = "github"
+    url = "https://github.com/stephaneghozzi"
+    weight = 3
+[[params.social]]
+    name = "Twitter"
+    icon = "twitter"
+    url = "https://twitter.com/stephaneghozzi"
+    weight = 4
+[[params.social]]
+    name = "LinkedIn"
+    icon = "linkedin"
+    url = "https://linkedin.com/in/stephaneghozzi"
+    weight = 5

@@ -1,0 +1,48 @@
+{{ define "presentation" }}
+
+    <div class="container-fluid border-bottom border-2 border-dark">
+
+        <div class="row row-cols-1 row-cols-md-2">
+
+            <!-- presentation leading space -->
+            <div class="container sg-presentation-leading-space"></div>
+
+            <div class="col-md-9">
+
+                <div id="home" class="shifted-anchor"></div>
+
+                <!-- presentation intro -->
+                <div class="sg-presentation-intro">
+                    {{ with .Site.GetPage "home/presentation/presentation-intro.md" }}            
+                        {{ .Content }}
+                    {{ end }}
+                </div>
+
+                <!-- presentation action -->
+                <div class="sg-presentation-action">
+                    {{ with .Site.GetPage "home/presentation/presentation-action.md" }}            
+                        {{ .Content }}
+                    {{ end }}
+                </div>
+
+            </div>
+
+            <!-- presentation philosophy -->
+            <div class="col-md-3">
+
+                <div class="sg-presentation-philosophy">
+                    {{ with .Site.GetPage "home/presentation/presentation-philosophy.md" }}            
+                        {{ .Content }}
+                    {{ end }}
+                </div>
+
+            </div>
+
+            <!-- presentation trailing space -->
+            <div class="container sg-presentation-trailing-space"></div>
+
+        </div>
+
+    </div>
+
+{{ end }}

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ .Lang }}">
+
+  {{ block "head" . }}
+  {{ end }}
+
+  <body class="d-flex flex-column">
+
+    {{ block "navbar" . }}
+    {{ end }}
+
+    {{ block "main" . }}
+    {{ end }}
+        
+    {{ block "footer" . }}
+    {{ end }}
+
+  </body>
+  
+</html>

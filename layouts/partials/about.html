@@ -1,0 +1,79 @@
+{{ define "about" }}
+    
+        <div class="container-fluid">
+            
+            <!-- about title -->
+            <div class="container-fluid sg-about-title p-0">
+                {{ with .Site.GetPage "home/about/about-bio.md" }}
+                    <h2 id="about" class="shifted-anchor">{{ .Title }} </h2>
+                {{ end }}
+            </div>
+
+            <div class="row">
+
+                <!-- about contact -->
+                <div class="col-md-6 d-flex align-items-end sg-about-contact p-0">
+                    <div class="container-fluid p-0">
+
+                        <!-- about contact email -->
+                        <div class="container-fluid sg-about-contact border-bottom border-1 border-white">
+                            {{ range .Site.Params.social}}
+                                {{ if eq .name "email" }}
+                                    <a href="{{ .url }}"><b>{{ .email }}</b>&ensp;<svg class="sg-icon"><use xlink:href="#{{ .icon }}"/></svg></a>
+                                {{ end }}
+                            {{ end }}                        
+                        </div>
+                            
+                        <div class="row m-0">
+
+                            <!-- about contact content -->
+                            <div class="col-6 mt-auto p-0">
+                                <div class="container-fluid sg-about-contact">
+                                    {{ with .Site.GetPage "home/about/about-contact.md" }}
+                                        {{ .Content }}
+                                    {{ end }}
+                                </div>
+                            </div>
+
+                            <!-- about contact social -->
+                            <div class="col-6 border-start border-1 border-white p-0">
+                                <div class="container-fluid sg-about-contact">
+                                    {{ range .Site.Params.social }}
+                                        {{ if ne .name "email" }}
+                                            <a href="{{ .url }}"><b>{{ .name }}</b>&ensp;<svg class="sg-icon"><use xlink:href="#{{ .icon }}"/></svg></a><br>
+                                        {{ end }}
+                                    {{ end }}
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                
+            </div>
+
+                <!-- about bio -->
+                <div class="col-md-6 sg-about-bio">
+                    {{ with .Site.GetPage "home/about/about-bio.md" }}
+                        <div class="container">
+                            {{ .Content }}
+                        </div>
+
+                    {{ end }}
+                </div>
+
+                <!-- about website -->
+                <div class="container sg-about-website border-top border-bottom border-1 border-dark">
+                    {{ with .Site.GetPage "home/about/about-website.md" }}
+                        {{ .Content }}
+                    {{ end }}
+                </div>
+
+                <!-- about love -->
+                <div class="container sg-about-love">
+                    <p><a href="https://en.wikipedia.org/wiki/love"><svg class="sg-icon"><use xlink:href="#heart-fill"/></svg></a></p>
+                </div>
+
+            </div>
+        </div>
+
+{{ end }}

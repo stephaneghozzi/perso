@@ -1,0 +1,15 @@
+{{/* Appends a right-arrow SVG to the phrase (string) in the first argument `0`, without possibility of line break between last word and arrow */}}
+{{ $phrase := .Get 0 }}
+{{ $words := split $phrase " " }}
+{{ $number_words := len $words }}
+{{ $number_words_minus_1 := sub $number_words 1 }}
+{{ $words_minus_last := first $number_words_minus_1 $words }}
+{{ $words_minus_last_p := print $words_minus_last }}
+{{ $words_minus_last_t := trim $words_minus_last_p "[]"}}
+{{ $last_word := index $words (sub $number_words 1) }}
+
+{{ if eq $number_words 1 }}
+    <span class="sg-nobr">{{ $phrase }}<svg class="sg-icon"><use xlink:href="#arrow-right-link"/></svg></span>
+{{ else }}
+    {{ $words_minus_last_t }} <span class="sg-nobr">{{ $last_word }}<svg class="sg-icon"><use xlink:href="#arrow-right-link"/></svg></span>
+{{ end }}

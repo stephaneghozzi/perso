@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<style>
+
+    .sg-twitter-card-canvas {
+        padding: 0;
+        padding-top: 10em;
+        padding-bottom: 10em;
+        border-style: solid;
+        border-width: 0.1em;
+    }
+
+    .sg-twitter-card-title {
+        font-family: "titles";
+        font-size: 1.5rem;
+        padding-left: 2em;
+    }
+
+    .sg-twitter-card-subtitle {
+        padding-bottom: 2em;
+        padding-left: 3em;
+    }
+
+</style>
+
+<main>
+    <div class="container sg-single-page">
+
+        <div class="container sg-twitter-card-canvas border border-1 border-dark">
+
+            <div class="container sg-twitter-card-title">
+                {{ .Title }}
+            </div>
+
+            <div class="container sg-twitter-card-subtitle">
+                {{ .Content }}
+            </div>
+
+            <div class="container border-bottom border-4 border-dark"></div>
+
+
+        </div>
+
+    </div>
+</main>
+{{ end }}
