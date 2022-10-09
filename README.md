@@ -2,23 +2,13 @@
 
 The source-code files for [https://stephaneghozzi.com](https://stephaneghozzi.com) (which is an alias for stephaneghozzi.github.io).
 
-The files of the are generated via [Hugo](https://gohugo.io) and can be found at [https://github.com/stephaneghozzi/stephaneghozzi.github.io](https://github.com/stephaneghozzi/stephaneghozzi.github.io). After installation, run in this directory:
-```
-> hugo
-```
-The files produced in public/ can be copied at the root of the website. Note that you need to set the proper base URL in [config.toml](config.toml)
+The files of the website are generated via [Hugo](https://gohugo.io) and can be found at [https://github.com/stephaneghozzi/stephaneghozzi.github.io](https://github.com/stephaneghozzi/stephaneghozzi.github.io). 
 
-Styling and responsive layout based on [Bootstrap](https://getbootstrap.com). The font used is Google Fonts' [Chivo](https://fonts.google.com/specimen/Chivo).
+After installing Hugo and downloading this repository, run `> hugo` in this directory. The website files are generated in `public/` and can be copied at the root of the website. Note that you need to set the proper base URL in [config.toml](config.toml)
 
-Twitter card: it is not automatically generated. Rather, one has to generate the corresponding page (which has the proper styling) and then take screenshot. To generate website with drafts by running:
-```
-hugo -D
-```
-Be careful however not to copy the page to the actual website. Another, safer option as no files are generated:
-```
-hugo server -D
-``` 
-and go to http://localhost:1313/twitter-card.
+The styling and responsive layout are based on [Bootstrap](https://getbootstrap.com). The font used is Google Fonts' [Chivo](https://fonts.google.com/specimen/Chivo).
+
+N.B.: the Twitter card is not automatically generated. Rather, the idea is to generate a the twitter-card page and then take screenshot. To generate this page build or preview the website including drafts (run `> hugo -D` or `> hugo server -D`).
 
 ## Licenses
 
