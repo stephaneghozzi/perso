@@ -20,7 +20,7 @@ enableRobotsTXT = true
     author = "Stéphane Ghozzi"
     favicon = "img/favicon.png"
     description = "Stéphane Ghozzi's personal site"
-    images = ["img/thumbnail.png"]
+    images = ["img/card.png"]
 
     [params.paths]
         docs = "docs" # without trailing "/"

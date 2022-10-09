@@ -1,5 +1,6 @@
 ---
 title: biography
+description: more about me
 ---
 I am an independent data scientist and consultant based in Berlin, Germany. A physics graduate, with PhD, of the École normale supérieure, I have worked as a mathematical modeller, coder and developer in fundamental and applied research. My main domains of expertise are physics, infectious-disease surveillance and epidemiology. Experimental biology and visual arts have also been part of my professional life. 
 
