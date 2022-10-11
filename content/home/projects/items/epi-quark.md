@@ -1,5 +1,5 @@
 ---
-title: epi-quark
+title: outbreak detection evaluation
 refs: 
     -
         name: '{{< arrow-right-link "preprint" >}}'
@@ -10,4 +10,4 @@ refs:
 _build:
     render: never
 ---
-a Python package implementing a new general approach to evaluating outbreak-detection algorithms
+a new general approach to evaluating outbreak-detection algorithms implemented in the Python package epi-quark (main developer Auss Abbood)

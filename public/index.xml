@@ -108,21 +108,21 @@ This lead me to live and work in five cities in four countries, and speak three 
     </item>
     
     <item>
-      <title>epi-quark</title>
-      <link></link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid></guid>
-      <description>a Python package implementing a new general approach to evaluating outbreak-detection algorithms</description>
-    </item>
-    
-    <item>
       <title>infectious disease severity dashboard</title>
       <link></link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid></guid>
       <description>an R Shiny dashboard to compute and visualize the severity of infectious diseases following the PISA recommendations of WHO</description>
+    </item>
+    
+    <item>
+      <title>outbreak detection evaluation</title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid></guid>
+      <description>a new general approach to evaluating outbreak-detection algorithms implemented in the Python package epi-quark (main developer Auss Abbood)</description>
     </item>
     
     <item>
