@@ -1,4 +1,5 @@
 - styling:
+  - make leader space in presentation (before introduction text) dependent on screen width (it is to large on small screen)
   - see fontsinuse.com: examples of fonts used
   - fonts & colors, try (light grey) background for emphasis
   - try adding background colors, e.g., project titles...
