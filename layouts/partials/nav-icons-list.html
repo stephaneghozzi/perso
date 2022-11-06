@@ -3,7 +3,8 @@
     <ul class="nav justify-content-end">
         {{ range .Site.Params.social }}
             <li class="nav-item">
-                <a href="{{ .url }}">
+                <!-- `rel="me"` necessary for Mastodon to validate this website -->
+                <a rel="me" href="{{ .url }}">
                     <svg class="sg-icon"><use xlink:href="#{{ .icon }}"/></svg>
                 </a>
             </li>
