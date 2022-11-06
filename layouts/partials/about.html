@@ -40,7 +40,10 @@
                                 <div class="container-fluid sg-about-contact">
                                     {{ range .Site.Params.social }}
                                         {{ if ne .name "email" }}
-                                            <a href="{{ .url }}"><b>{{ .name }}</b>&ensp;<svg class="sg-icon"><use xlink:href="#{{ .icon }}"/></svg></a><br>
+                                            <!-- `<a rel="me" href="{link to Mastodon profile}">` -->
+                                            <!-- somewhere in the website is necessary for Mastodon to -->
+                                            <!-- validate this website. -->
+                                            <a rel="me" href="{{ .url }}"><b>{{ .name }}</b>&ensp;<svg class="sg-icon"><use xlink:href="#{{ .icon }}"/></svg></a><br>
                                         {{ end }}
                                     {{ end }}
                                 </div>
