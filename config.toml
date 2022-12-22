@@ -55,12 +55,7 @@ enableRobotsTXT = true
     url = "https://fosstodon.org/@stephaneghozzi"
     weight = 4
 [[params.social]]
-    name = "Twitter"
-    icon = "twitter"
-    url = "https://twitter.com/stephaneghozzi"
-    weight = 5
-[[params.social]]
     name = "LinkedIn"
     icon = "linkedin"
     url = "https://linkedin.com/in/stephaneghozzi"
-    weight = 6
+    weight = 5
