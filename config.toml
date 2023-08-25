@@ -52,7 +52,7 @@ enableRobotsTXT = true
 [[params.social]]
     name = "Mastodon"
     icon = "mastodon"
-    url = "https://mastodon.online/@stephaneghozzi"
+    url = "https://mastodon.social/@stephaneghozzi"
     weight = 4
 [[params.social]]
     name = "LinkedIn"
