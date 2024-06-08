@@ -2,7 +2,7 @@
 title: biography
 description: more about me
 ---
-I am an independent data scientist and consultant based in Berlin, Germany. A physics graduate, with PhD, of the École normale supérieure, I have worked as a mathematical modeller, coder and developer in fundamental and applied research. My main domains of expertise are physics, infectious-disease surveillance and epidemiology. Experimental biology and visual arts have also been part of my professional life. 
+I am a data scientist at the [World Health Organization Hub for Pandemic and Epidemic Intelligence](https://pandemichub.who.int/) in Berlin, Germany. A physics graduate, with PhD, of the École normale supérieure, I have worked as a mathematical modeller, coder and developer in fundamental and applied research. My main domains of expertise are physics, infectious-disease surveillance and epidemiology. Experimental biology and visual arts have also been part of my professional life. 
 
 This lead me to live and work in five cities in four countries, and speak three languages fluently. I use the pronouns he/him. A full curriculum vitae in English can be downloaded [here]({{< filepath "docs" "cv-ghozzi.pdf" >}}) (pdf).
 
