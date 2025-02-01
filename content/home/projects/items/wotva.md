@@ -3,10 +3,10 @@ title: "world health organization outbreak toolkit virtual assistant"
 refs: 
     -
         name: '{{< arrow-right-link "code & motivation" >}}'
-        url: https://gitlab.com/stephaneghozzi/wotva
+        url: https://github.com/stephaneghozzi/wotva
     -
         name: '{{< arrow-right-link "slides (pdf)" >}}'
-        url: https://gitlab.com/stephaneghozzi/wotva/-/raw/master/doc/outbreak_toolkit-assistant-presentation-20191016-long.pdf?inline=false
+        url: https://github.com/stephaneghozzi/wotva/blob/master/doc/outbreak_toolkit-assistant-presentation-20191016-long.pdf
     -
         name: '{{< arrow-right-link "live demo" >}}'
         url: https://stephaneghozzi.shinyapps.io/wotva

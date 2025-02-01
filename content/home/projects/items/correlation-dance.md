@@ -3,7 +3,7 @@ title: correlation dance
 refs: 
     -
         name: code, motivation & output
-        url: https://gitlab.com/stephaneghozzi/correlation-dance
+        url: https://github.com/stephaneghozzi/correlation-dance
 _build:
     render: never
 ---

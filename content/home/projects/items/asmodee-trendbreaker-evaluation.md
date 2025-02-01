@@ -6,7 +6,7 @@ refs:
         url: https://doi.org/10.1098/rstb.2020.0266
     -
         name: '{{< arrow-right-link "code" >}}'
-        url: https://gitlab.com/stephaneghozzi/asmodee-trendbreaker-evaluation
+        url: https://github.com/stephaneghozzi/asmodee-trendbreaker-evaluation
 _build:
     render: never
 ---

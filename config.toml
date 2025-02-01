@@ -40,22 +40,17 @@ enableRobotsTXT = true
     url = "mailto:hello@stephaneghozzi.com"
     weight = 1
 [[params.social]]
-    name = "GitLab"
-    icon = "gitlab"
-    url = "https://gitlab.com/stephaneghozzi"
-    weight = 2
-[[params.social]]
     name = "GitHub"
     icon = "github"
     url = "https://github.com/stephaneghozzi"
-    weight = 3
+    weight = 2
 [[params.social]]
     name = "Mastodon"
     icon = "mastodon"
     url = "https://mastodon.social/@stephaneghozzi"
-    weight = 4
+    weight = 3
 [[params.social]]
     name = "LinkedIn"
     icon = "linkedin"
     url = "https://linkedin.com/in/stephaneghozzi"
-    weight = 5
+    weight = 4

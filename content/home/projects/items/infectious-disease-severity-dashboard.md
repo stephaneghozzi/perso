@@ -3,7 +3,7 @@ title: infectious disease severity dashboard
 refs: 
     -
         name: code & motivation
-        url: https://gitlab.com/stephaneghozzi/infectious-disease-severity-dashboard
+        url: https://github.com/stephaneghozzi/infectious-disease-severity-dashboard
     -
         name: live demo
         url: https://stephaneghozzi.shinyapps.io/infectious-disease-severity

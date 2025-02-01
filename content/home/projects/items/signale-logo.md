@@ -3,7 +3,7 @@ title: signale logo
 refs: 
     -
         name: '{{< arrow-right-link "code, motivation & output" >}}'
-        url: https://gitlab.com/stephaneghozzi/signale-logo
+        url: https://github.com/stephaneghozzi/signale-logo
 _build:
     render: never
 ---

@@ -3,10 +3,10 @@ title: eios anomaly
 refs: 
     -
         name: '{{< arrow-right-link "code & motivation" >}}'
-        url: https://gitlab.com/stephaneghozzi/eios-anomaly
+        url: https://github.com/stephaneghozzi/eios-anomaly
     -
         name: '{{< arrow-right-link "slides (pdf)" >}}'
-        url: https://gitlab.com/stephaneghozzi/eios-anomaly/-/raw/master/eios_anomaly-seoul-20191113.pdf?inline=false
+        url: https://github.com/stephaneghozzi/eios-anomaly/blob/master/eios_anomaly-seoul-20191113.pdf
 _build:
     render: never
 ---
