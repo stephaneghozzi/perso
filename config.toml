@@ -35,7 +35,7 @@ enableRobotsTXT = true
 
 [[params.social]]
     name = "email"
-    icon = "envelope"
+    icon = "envelope-fill"
     email = "hello@stephaneghozzi.com"
     url = "mailto:hello@stephaneghozzi.com"
     weight = 1
