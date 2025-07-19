@@ -2,7 +2,7 @@
 
 ## About
 
-A [Hugo](https://gohugo.io) page that aims to be simple and flexible. The main page is organized in three parts: presentation, projects, and about. The project list is easily customizable, see [config.toml](config.toml) and [content/home/projects].
+A [Hugo](https://gohugo.io) page that aims to be simple and flexible. The home page is organized in three parts: presentation, projects, and about. The project list is easily customizable, see [config.toml](config.toml) and [content/home/projects/items].
 
 ## Local build, software, libraries
 

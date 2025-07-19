@@ -7,4 +7,4 @@ refs:
 _build:
     render: never
 ---
-an R script package to implement the SPA algorithm and demonstrate it in a Shiny application
+an R package to implement the SPA algorithm and demonstrate it in a Shiny application
