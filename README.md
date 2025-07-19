@@ -1,4 +1,10 @@
-# Personal page
+# Personal site
+
+## About
+
+A [Hugo](https://gohugo.io) page that aims to be simple and flexible. The main page is organized in three parts: presentation, projects, and about. The project list is easily customizable, see [config.toml](config.toml) and [content/home/projects].
+
+## Local build, software, libraries
 
 Run `hugo` in this directory to to build the page manually. The website files are generated in `public/` and can be copied at the root of the website. 
 
