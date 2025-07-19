@@ -1,14 +1,12 @@
-# Stéphane Ghozzi's personal page: source code
+# Personal page
 
-The source-code files for [https://stephaneghozzi.com](https://stephaneghozzi.com) (which is an alias for stephaneghozzi.github.io).
+Run `hugo` in this directory to to build the page manually. The website files are generated in `public/` and can be copied at the root of the website. 
 
-The files of the website are generated via [Hugo](https://gohugo.io) and can be found at [https://github.com/stephaneghozzi/stephaneghozzi.github.io](https://github.com/stephaneghozzi/stephaneghozzi.github.io). 
-
-After installing Hugo and downloading this repository, run `hugo` in this directory. The website files are generated in `public/` and can be copied at the root of the website. Note that you need to set the proper base URL in [config.toml](config.toml)
+You need to set the proper base URL in [config.toml](config.toml)
 
 The styling and responsive layout are based on [Bootstrap](https://getbootstrap.com). The font used is Google Fonts' [Chivo](https://fonts.google.com/specimen/Chivo).
 
-N.B.: the Twitter card is not automatically generated. Rather, the idea is to generate the twitter-card page and then take a screenshot. To display this page, build or preview the website including drafts (run `hugo -D` or `hugo server -D`).
+N.B.: the social-media card is not automatically generated. Rather, the idea is to generate the twitter-card page and then take a screenshot. To display this page, build or preview the website including drafts (run `hugo -D` or `hugo server -D`).
 
 ## Licenses
 

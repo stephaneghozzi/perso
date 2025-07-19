@@ -1,5 +1,5 @@
-baseURL = "https://stephaneghozzi.com"
-languageCode = "en-us"
+baseURL = "https://stephaneghozzi.github.io/perso"
+languageCode = "en-gb"
 title = "Stéphane Ghozzi"  
 enableRobotsTXT = true
 
