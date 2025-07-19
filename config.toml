@@ -24,10 +24,11 @@ enableRobotsTXT = true
 
     [params.paths]
         docs = "docs" # without trailing "/"
-        projects = "/home/projects/items" # individual projects without trailing "/"
+        # individual projects without trailing "/"
+        projects = "/home/projects/items" 
 
     [params.projects]
-        name = ["epi-quark", "eios-anomaly", "sormasdatagen", "wotva", "asmodee-trendbreaker-evaluation", "signale-logo"]
+        name = ["surveillance portfolio assistant", "epi-quark", "eios-anomaly", "sormasdatagen", "wotva", "asmodee-trendbreaker-evaluation", "signale-logo"]
 
 [[params.scss]]
     source = "scss/styles.scss"
