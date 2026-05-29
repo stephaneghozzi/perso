@@ -6,9 +6,9 @@ A [Hugo](https://gohugo.io) page that aims to be simple and flexible. The home p
 
 ## Local build, software, libraries
 
-For localdevelopment, run `hugo server` in this directory. Note that you need to set the proper base URL in [config.toml](config.toml) to `baseURL = "http://localhost:1313/"`
+For local development, run `hugo server` in this directory. Note that you need to set the proper base URL in [config.toml](config.toml) to `baseURL = "http://localhost:1313/"`
 
-Run `hugo` in this directory to to build the page manually. The website files are generated in `public/` and can be copied at the root of the website on the hosting server (base URL now the address of the website). 
+Run `hugo` in this directory to build the page manually. The website files are generated in `public/` and can be copied at the root of the website on the hosting server (base URL now the address of the website). 
 
 The styling and responsive layout are based on [Bootstrap](https://getbootstrap.com). The font used is Google Fonts' [Chivo](https://fonts.google.com/specimen/Chivo).
 
