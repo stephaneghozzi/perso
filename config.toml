@@ -1,4 +1,5 @@
 baseURL = "https://stephaneghozzi.github.io/perso"
+# baseURL = "http://localhost:1313/" # for local development
 languageCode = "en-gb"
 title = "Stéphane Ghozzi"  
 enableRobotsTXT = true
@@ -23,9 +24,8 @@ enableRobotsTXT = true
     images = ["img/card.png"]
 
     [params.paths]
-        docs = "docs" # without trailing "/"
-        # individual projects without trailing "/"
-        projects = "/home/projects/items" 
+        docs = "docs"
+        projects = "/home/projects/items"
 
     [params.projects]
         name = ["surveillance portfolio assistant", "epi-quark", "eios-anomaly", "sormasdatagen", "wotva", "asmodee-trendbreaker-evaluation", "signale-logo"]

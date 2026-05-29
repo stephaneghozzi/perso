@@ -2,4 +2,4 @@
 _build:
     render: never
 ---
-***Honesty*** is seeing that data-science projects are embedded in human systems. It is providing best scientific and programming practices; offering clear presentation and interpretation of approach and results; highlighting potential, uncertainties, limitation, risks of data and analyses; producing understandable and appealing graphics and illustrations.
+To me, ***honesty*** in data science is treating insights and uncertainty equally, valuing domain expertise while contributing to its progress, celebrating diversity of viewpoints while striving for clarity. What satisfies us need not only be numbers that match; it can be finding meaning, enabling action, or simply enjoying an elegant perspective.
